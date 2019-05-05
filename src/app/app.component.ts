@@ -17,8 +17,8 @@ export class AppComponent implements OnInit {
 
   addMessage(): void {
     if (this.messages.length >= 6) {
-      this.messages.pop();
-      this.messages.pop();
+      this.messages.shift();
+      this.messages.shift();
     }
     this.messages.push({
       sender: 'Me',
